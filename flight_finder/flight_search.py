@@ -3,7 +3,7 @@ import requests
 from datetime import datetime, timedelta
 from notification_manager import NotificationManager
 
-FLY_FROM = "IST"
+FLY_FROM = "LON"
 class FlightSearch(NotificationManager):
     #This class is responsible for talking to the Flight Search API.
     def __init__(self):
@@ -19,6 +19,12 @@ class FlightSearch(NotificationManager):
             "fly_to" : "",
             "date_from" : self.date_from, 
             "date_to" : self.date_to, 
+            "nights_in_dst_from": 7,
+            "nights_in_dst_to": 28,
+            "flight_type": "round",
+            "one_for_city": 1,
+            "max_stopovers": 0,
+            "curr": "GBP"
             }
         self.query_params = {
             "location_types" : "city",

@@ -35,10 +35,12 @@ class DataManager(FlightSearch, NotificationManager):
 
     def check_price(self):
         for index in range(len(self.cheapest_ticket_list)):
-            if self.cheapest_ticket_list[index] == {}:
+            try:
+            # if self.cheapest_ticket_list[index] == {}:
+            #     continue
+                cheapest = float(self.cheapest_ticket_list[index]['price']) 
+                current = float(self.sheety_response['prices'][index]["lowestPrice"])
+                if cheapest < current:
+                    self.notify(self.cheapest_ticket_list[index])
+            except:
                 continue
-            cheapest = float(self.cheapest_ticket_list[index]['price']) 
-            current = float(self.sheety_response['prices'][index]["lowestPrice"])
-            if cheapest < current:
-                self.notify(self.cheapest_ticket_list[index])
-            
