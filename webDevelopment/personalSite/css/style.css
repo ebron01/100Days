@@ -13,5 +13,12 @@ hr {
      border-width: 5px;
      width: 3%;
 }    
-
-
+.circular {
+    border-radius: 100%;
+}
+h1:hover {
+    color: gold;
+}
+h3:hover {
+    color: gold;
+}
