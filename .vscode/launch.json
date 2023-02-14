@@ -21,10 +21,10 @@
             "justMyCode": true
         }, 
         {
-            "name": "flight_finder",
+            "name": "bs4",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/flight_finder/main.py",
+            "program": "/home/beast/100Days/bs4-start/main.py",
             "console": "integratedTerminal",
             "justMyCode": true
         }
