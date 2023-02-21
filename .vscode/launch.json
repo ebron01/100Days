@@ -24,7 +24,7 @@
             "name": "bs4",
             "type": "python",
             "request": "launch",
-            "program": "/home/beast/100Days/bs4-start/main.py",
+            "program": "/home/beast/100Days/timeMachine/main.py",
             "console": "integratedTerminal",
             "justMyCode": true
         }
