@@ -24,7 +24,7 @@
             "name": "bs4",
             "type": "python",
             "request": "launch",
-            "program": "/home/beast/100Days/scrapeSelenium/main.py",
+            "program": "/home/beast/100Days/scrapeSelenium/interaction.py",
             "console": "integratedTerminal",
             "justMyCode": true
         }
